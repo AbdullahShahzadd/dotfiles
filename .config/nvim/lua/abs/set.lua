@@ -33,7 +33,9 @@ vim.opt.colorcolumn = "80"
 
 vim.opt.guifont="DejaVuSansMNerdFontMono-Regular"
 
-vim.g.mapleader = " "
 
 vim.opt.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme gruvbox]])
+
+-- Registering templ file extension
+vim.filetype.add({ extension = { templ = "templ" } })
